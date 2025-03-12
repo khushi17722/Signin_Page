@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #001f3f, #003366);
+    color: white;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    background: linear-gradient(to right, #002a5c, #004080);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.left-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+}
+.left-section::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: 40px;
+    left: 20px;
+}
+.left-section::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+}
+.right-section {
+    width: 60%;
+    padding: 50px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.checkbox {
+    margin: 15px 0;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+button:hover {
+    background: darkgoldenrod;
+}
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+a {
+    color: gold;
+    text-decoration: none;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
